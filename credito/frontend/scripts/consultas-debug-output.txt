@@ -1,0 +1,459 @@
+﻿Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+CONSULTAS PDFJS SECTION CONSULTAS Y SEGUIMIENTOS
+CONSULTAS
+Comercio, Industr├¡a y Servicios   Entidades Financieras   Entidades Bancarias
+Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago
+0
+1
+2
+3 2022 2023 2024
+NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 11 de 11
+CONSULTAS INDEXES { consultasIndex: 17424, seguimientoIndex: -1, parentIdx: 17424 }
+CONSULTAS BLOCK EXTRACT scope {
+  parentIdx: 17424,
+  sectionLength: 412,
+  sectionPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'Comercio, Industr├¡a y Servicios   Entidades Financieras   Entidades Bancarias\n' +
+    'Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago\n' +
+    '0\n' +
+    '1\n' +
+    '2\n' +
+    '3 2022 2023 2024\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 11 de 11',
+  hasRubros: false,
+  hasTotales: false,
+  hasEntBancarias: false
+}
+CONSULTAS BLOCK CANDIDATE SKIP {
+  offset: 17424,
+  reason: 'findConsultasTableStartInScopedText returned -1',
+  scopedPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'Comercio, Industr├¡a y Servicios   Entidades Financieras   Entidades Bancarias\n' +
+    'Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago\n' +
+    '0\n' +
+    '1\n' +
+    '2\n' +
+    '3 2022 2023 2024\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├íg'
+}
+CONSULTAS BLOCK EXTRACT FAILED {
+  reason: 'no candidates',
+  parentIdx: 17424,
+  segRel: -1,
+  sectionHasTotales: false,
+  sectionHasConsultasWord: true
+}
+CONSULTAS BLOCK FULL null
+CONSULTAS LINES []
+CONSULTAS ROW CANDIDATE null
+CONSULTAS NUMBERS null
+CONSULTAS EXTRAIDAS null
+CONSULTAS EXTRACT FAILED {
+  reason: 'extractConsultasBlockFromText returned null',
+  pdfjsConsultasSectionPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'Comercio, Industr├¡a y Servicios   Entidades Financieras   Entidades Bancarias\n' +
+    'Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago\n' +
+    '0\n' +
+    '1\n' +
+    '2\n' +
+    '3 2022 2023 2024\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 11 de 11'
+}
+CONSULTAS EXTRAIDAS null
+NOSIS CONSULTAS PARSED null
+NOSIS HISTORICO RAW null
+NOSIS HISTORICO PARSED null
+[NOSIS PARSER REGEX] {
+  label: 'section.juicios',
+  regex: 'juicios?',
+  match: 'juicio de valor sobre las personas citadas ni sobre su solvencia.\n' +
+    'En el caso en ',
+  value: 8607
+}
+[NOSIS PARSER REGEX] {
+  label: 'section.chequesRechazados',
+  regex: 'cheques?\\s*rechazados?',
+  match: 'Cheques Rechazados BCRA\n' +
+    'Cantidad sin fondos, no pagados - ├Ült. 6 Meses:   -\n' +
+    'Mont',
+  value: 1625
+}
+[NOSIS PARSER REGEX] {
+  label: 'section.concursos',
+  regex: 'concursos?',
+  match: 'Concursos, Pedidos de Quiebra\n' +
+    '\n' +
+    'Concursos y quiebras cantidad - ├Ült. 24 meses:   ',
+  value: 7463
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 6',
+  value: '6'
+}
+[NOSIS PARSER REGEX] {
+  label: 'mora.negativa',
+  regex: '\\b(?:sin|no\\s+(?:registra|posee|tiene|existen|se\\s+inform|hay|figura)|0\\s+cheques?|cero\\s+cheques?|no\\s+registra)\\b',
+  match: 'Solicitado por:   363065 - GRUPO NUCLEO S.A.   Fecha: 06/08/2024 16:13\n' +
+    'Informaci├│n confidencial. Se proh├¡be su exhibici├│',
+  value: false
+}
+[NOSIS PARSER REGEX] {
+  label: 'chequesRechazados.cantidad.total',
+  regex: '(?:cantidad|total|n[┬░┬║]|nro\\.?|cant\\.?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'N┬║ 945332',
+  value: '945332'
+}
+[NOSIS PARSER REGEX] {
+  label: 'global.cheques.cantidad',
+  regex: '(\\d{1,5})\\s*cheques?\\s*rechazados?',
+  match: '2024\nCHEQUES RECHAZADOS',
+  value: '2024'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicio',
+  value: 'juicio'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicios',
+  value: 'juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicio',
+  value: 'juicio'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicios',
+  value: 'juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concurso',
+  value: 'Concurso'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concurso',
+  value: 'Concurso'
+}
+NOSIS INDICATORS BUILT {
+  chequesHistoricoParsed: false,
+  cantidadCheques: '945332',
+  montoCheques: '',
+  chequesRechazadosTotal: '',
+  chequesAbonados: '',
+  chequesPendientes: '',
+  montoRechazadoTotal: '',
+  montoAbonado: '',
+  montoPendiente: ''
+}
+NOSIS PARSER DEBUG {
+  textoExtraido: 'Solicitado por:   363065 - GRUPO NUCLEO S.A.   Fecha: 06/08/2024 16:13\n' +
+    'Informaci├│n confidencial. Se proh├¡be su exhibici├│n o divulgaci├│n.\n' +
+    'No implica juicio de valor sobre las personas citadas ni sobre su solvencia.\n' +
+    'En el caso en que haya registros sin el N┬║ de documento o CUIT/CUIL identificatorios, la informaci├│n debe tomarse como una simple   referencia y el usuario deber├í asegurarse que el\n' +
+    'registro encontrado corresponda a la persona buscada y no a un hom├│nimo.   Las interpretaciones y selecci├│n de registros para su impresi├│n que se hagan, son de exclusiva\n' +
+    'responsabilidad de quien las realizare.   Las l├¡neas horizontales separan registros independientes entre s├¡ vinculados a alguna de las condiciones de b├║squeda utilizadas.\n' +
+    'Informe Individual   >   20-33480478-0   |   GAUTO MARCOS ADRIAN\n' +
+    'Domicilio fiscal\n' +
+    'Domicilios alternativos\n' +
+    'A continuaci├│n, valide los datos de la persona que se presenta como   GAUTO MARCOS ADRIAN - CUIL 20-33480478-0\n' +
+    'Valide el email y el n├║mero de celular brindado por el mismo mediante el env├¡o de un PIN que remitir├í Nosis.\n' +
+    'Confirme su identidad mediante un cuestionario que s├│lo el verdadero titular puede contestar.\n' +
+    'Corrobore el estado activo del CBU brindado y la coincidencia con la titularidad del mismo.\n' +
+    'Visualice las validaciones realizadas y los datos obtenidos ingresando con su n├║mero de usuario y clave en   vid.nosis.com .\n' +
+    'Automatice sus controles antifraude y valide identidades las 24 horas, los 365 d├¡as del a├▒o.   Para conocer m├ís sobre nuestras soluciones de Prevenci├│n de Fraude\n' +
+    'PERFIL DEL CONSULTADO\n' +
+    'INFORMACI├ôN GENERAL\n' +
+    'SCORE\n' +
+    '788  \n' +
+    '1   999\n' +
+    '788\n' +
+    ' \n' +
+    'CDA: 917.052 - Creditos y Cobranzas (Falta Doc.)\n' +
+    'Aprobado\n' +
+    'Denominaci├│n:   GAUTO MARCOS ADRIAN\n' +
+    'Apellido/s:   GAUTO\n' +
+    'Nombre/s:   MARCOS ADRIAN\n' +
+    'Identificaci├│n:\n' +
+    'CUIT 20-33480478-0\n' +
+    'DNI 33.480.478 [Ejemplar B]\n' +
+    'Nacimiento:   30/07/1987 [37 a├▒os]\n' +
+    'Sexo:   Masculino\n' +
+    'San Martin 6902 (7600) - Mar Del Plata - Buenos Aires\n' +
+    'Chile 1826 - (7600) - Mar Del Plata - Buenos Aires\n' +
+    'Rivadavia 5860 - (7600) - Mar Del Plata - Buenos Aires\n' +
+    'VALIDACI├ôN DE IDENTIDAD\n' +
+    'E-mail:   No se encontraron datos validados.\n' +
+    'Celular:   No se encontraron datos validados.\n' +
+    'Cuestionario:   No se encontraron datos validados.\n' +
+    'CBU:   No se encontraron datos validados.\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 1 de 11\n' +
+    'comun├¡quese con su asesor comercial o con Atenci├│n al Cliente al 2206-8020.\n' +
+    'No existen documentos cuestionados al   06/08/2024\n' +
+    'Nivel Socioecon├│mico (NSE):   C2   (Entre $ 862,869 y $ 1,235,030)\n' +
+    'Situaci├│n laboral:   Relaci├│n de dependencia\n' +
+    'Empleador:   30-70933244-5 | GRUPO NUCLEO SA\n' +
+    '(223) 493-9900 / (11) 4795-1187 / (11) 5091-9999 / (223) 462-9214 / (223) 491-7466\n' +
+    'Total de endeudamiento sistema financiero:   $ 807,000\n' +
+    'Total de compromisos mensuales sistema financiero:   $ 4,973\n' +
+    'Situaci├│n vigente de Central de Deudores BCRA:   1   En situaci├│n normal\n' +
+    'Total de consultas en Nosis:   ├Ültimos 3 meses: 4   |   ├Ültimos 12 meses: 6\n' +
+    'Registra aportes patronales   pagos   como empleado dentro de los ├║ltimos 12 meses\n' +
+    'No registra documentos cuestionados\n' +
+    'Grupo de variables configurado por el usuario:\n' +
+    'Nombre del grupo:   NM Personas Humanas\n' +
+    'N├║mero: 99001 Versi├│n: 8 Fecha:   02/11/2018\n' +
+    '[VI] Domicilio Fiscal\n' +
+    'Calle:   SAN MARTIN\n' +
+    'N├║mero:   6902\n' +
+    'Piso:   -\n' +
+    'Departamento:   -\n' +
+    'Localidad:   MAR DEL PLATA\n' +
+    'C├│digo Postal:   7600\n' +
+    'Provincia:   Buenos Aires\n' +
+    '[VI] Tel├®fonos\n' +
+    'C├│digo de ├írea, del tel├®fono N┬║1.:\n' +
+    'N├║mero, del tel├®fono N┬║1.:\n' +
+    '[VI] Inscripci├│n en AFIP\n' +
+    'Es jubilado:   No\n' +
+    'Es empleado:   Si\n' +
+    'Es Monotributista:   No\n' +
+    'Es Aut├│nomo:   No\n' +
+    'Antig├╝edad laboral:   210\n' +
+    '[CI] Otras Variables de Comportamiento Crediticio\n' +
+    'Compromiso mensual:   $ 4,973\n' +
+    '[HC] Cheques Rechazados BCRA\n' +
+    'Cantidad sin fondos, no pagados - ├Ült. 6 Meses:   -\n' +
+    'Monto sin fondos, no pagados - ├Ült. 6 Meses:   -\n' +
+    'DOCUMENTOS CUESTIONADOS\n' +
+    'RESUMEN NOSIS\n' +
+    'RESUMEN CONFIGURABLE\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 2 de 11\n' +
+    '[QU] Juicios, Quiebras, Concursos, Pedidos de Quiebra\n' +
+    'Concursos y quiebras cantidad - ├Ült. 24 meses:   -\n' +
+    '[RC] Referencias Comerciales\n' +
+    'Cantidad - Vigente:   -\n' +
+    'Fuente - Vigente:   -\n' +
+    '[CO] Consultados\n' +
+    'Consultas - ├Ült. 12 meses:   6\n' +
+    '[DF] Deudores Fiscales\n' +
+    'Tiene deudas fiscales:   No\n' +
+    '[FEX] Fuentes Externas\n' +
+    '(CNE) Cumplimiento Censal - Fecha ├Ült. Actualizaci├│n:   10.11.2021\n' +
+    '(CNE) Cumplimiento Censal - Fecha Pr├│xima Actualizaci├│n:\n' +
+    '[CNE] Detalle Cumplimiento censal - INDEC\n' +
+    '(CNE) Cumplimiento Censal - Indica si el cuit tiene certificado.:   No\n' +
+    'Inscripciones en AFIP\n' +
+    'Descripci├│n   Fecha alta\n' +
+    'No Registra Impuestos Activos\n' +
+    'CONTRIBUYENTE NO AMPARADO EN LOS BENEFICIOS PROMOCIONALES INDUSTRIALES ESTABLECIDOS POR LEY 22021 Y SUS MODIFICATORIAS 22702 Y 22973, A LA\n' +
+    'FECHA DE EMISION DE LA PRESENTE CONSTANCIA.\n' +
+    'Advertencia : Tu Constancia Se Encuentra Bloqueada. El 30 - Nov - 2018 Venci├ô El Plazo Para Constituir El Domicilio Fiscal Electr├ôNico. Constituilo Para Desbloquearla.\n' +
+    '[al 05/08/2024]\n' +
+    'Agencia AFIP\n' +
+    'N┬║ 127 - Sede N. 1 - San Martin Nro 2932 - (7600) - Mar Del Plata\n' +
+    'Monotributo - Obra Social\n' +
+    'No posee registros en SSSalud como monotributista al   27/06/2024\n' +
+    'Historial de pagos\n' +
+    'No posee registros en SSSalud del historial de aportes a la obra social al   06/06/2024\n' +
+    'Fuente: SSSalud   |   www.sssalud.gob.ar\n' +
+    'Relaci├│n de Dependencia\n' +
+    'Empleador/es\n' +
+    '30-70933244-5   Grupo Nucleo SA\n' +
+    'Documento   Empleador\n' +
+    '30-71027349-5   Giaboo SRL\n' +
+    'AFIP\n' +
+    'Inscripci├│n AFIP:   28/03/2016 [8 a├▒os]\n' +
+    'Actualizaci├│n:   05/08/2024\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 3 de 11\n' +
+    'Documento   Empleador\n' +
+    '30-70933244-5   Grupo Nucleo SA\n' +
+    'Datos de la Obra Social\n' +
+    '123305   Obra Social del Personal de Sociedades de Autores Afines\n' +
+    'S.S.Salud   al 06/06/2024\n' +
+    'Fuentes:\n' +
+    'AFIP\n' +
+    'ANSES |   www.anses.gob.ar\n' +
+    'SRT |   www.srt.gob.ar\n' +
+    'Empleador:   30-70933244-5 | GRUPO NUCLEO SA\n' +
+    'Per├¡odo  \n' +
+    'Inclu├¡do en\n' +
+    'declaraci├│n jurada\n' +
+    'Aportes de\n' +
+    'seg. social\n' +
+    'Aportes de\n' +
+    'obra social\n' +
+    'Contrib. patronal\n' +
+    'obra social\n' +
+    '07/2023   Si   Pago   Pago   Pago\n' +
+    '08/2023   Si   Pago   Pago   Pago\n' +
+    '09/2023   Si   Pago   Pago   Pago\n' +
+    '10/2023   Si   Pago   Pago   Pago\n' +
+    '11/2023   Si   Pago   Pago   Pago\n' +
+    '12/2023   Si   Pago   Pago   Pago\n' +
+    '01/2024   Si   Pago   Pago   Pago\n' +
+    '02/2024   Si   Pago   Pago   Pago\n' +
+    '03/2024   Si   Pago   Pago   Pago\n' +
+    '04/2024   Si   Pago   Pago   Pago\n' +
+    '05/2024   Si   Pago   Pago   Pago\n' +
+    '06/2024   Si   Pago   Pago   Pago\n' +
+    'Fuente: AFIP\n' +
+    'Obra social:   OBRA SOCIAL DEL PERSONAL DE SOCIEDADES DE AUTORES Y AFINES   Fecha alta:   01/12/2013\n' +
+    'Parentesco con titular:   TITULAR\n' +
+    'Condici├│n del titular:   RELACION DE DEPENDENCIA\n' +
+    '├Ült. per├¡odo declarado:   03.2024\n' +
+    'APORTES PATRONALES\n' +
+    'Como   EMPLEADO   al 05/08/2024\n' +
+    'RELACIONES\n' +
+    'Total de relaciones encontradas:   31   Total de relaciones encontradas en bases Nosis:   31\n' +
+    '├üRBOL\n' +
+    '20-33480478-0   GAUTO MARCOS ADRIAN   Principal   37 a├▒os   Consultado\n' +
+    '30-70933244-5   GRUPO NUCLEO SA   Empleador   19 a├▒os   01/11/2015   Consultado\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 4 de 11\n' +
+    '20-10591036-4   GONZALEZ MANUEL VICENTE   Accionista   71 a├▒os   30/06/2019   Consultado\n' +
+    '20-10591036-4   GONZALEZ MANUEL VICENTE   Presidente   71 a├▒os   30/06/2017   Consultado\n' +
+    '20-10591036-4   GONZALEZ MANUEL VICENTE   Director   71 a├▒os   15/07/2014   Consultado\n' +
+    '20-22522124-4   FAY DIEGO ALEJANDRO   S├¡ndico/Revisor   52 a├▒os   23/11/2016   Consultado\n' +
+    '20-25290252-0   HUARTE LUCIANO ELIO   Vicepresidente   47 a├▒os   03/12/2021   Consultado\n' +
+    '20-25290252-0   HUARTE LUCIANO ELIO   Accionista   47 a├▒os   30/06/2019   Consultado\n' +
+    '20-25290252-0   HUARTE LUCIANO ELIO   Director   47 a├▒os   26/12/2016   Consultado\n' +
+    '20-25290252-0   HUARTE LUCIANO ELIO   Director Suplente   47 a├▒os   18/08/2015   Consultado\n' +
+    '20-25569165-2   SALA RICARDO FEDERICO   S├¡ndico/Revisor Suplente   47 a├▒os   23/11/2016   Consultado\n' +
+    '20-25957018-3   GONZALEZ KUNZ MAXIMILIANO   Director Suplente   47 a├▒os   26/12/2016   Consultado\n' +
+    '20-25957018-3   GONZALEZ KUNZ MAXIMILIANO   Presidente   47 a├▒os   15/07/2014   Consultado\n' +
+    '20-26056697-1   LARREA SEBASTIAN   Director Suplente   46 a├▒os   26/12/2016   Consultado\n' +
+    '20-27634637-8   GUERRERO MAURO ADRIAN   Presidente   44 a├▒os   03/12/2021   Consultado\n' +
+    '20-27634637-8   GUERRERO MAURO ADRIAN   Accionista   44 a├▒os   30/06/2019   Consultado\n' +
+    '20-27634637-8   GUERRERO MAURO ADRIAN   Director   44 a├▒os   26/12/2016   Consultado\n' +
+    '20-28506507-1   RUBIO JULIAN FRANCISCO   Director   43 a├▒os   18/08/2015   Consultado\n' +
+    '23-16920885-9   LEVY CARLOS ALBERTO   Director   60 a├▒os   18/08/2015   Consultado\n' +
+    '23-32441380-4   LURO YANINA SOLEDAD   Director Suplente   38 a├▒os   18/08/2015   Consultado\n' +
+    '27-11048299-5   KUNZ DIANA SUSANA   Ex Director   76 a├▒os   18/08/2015   Consultado\n' +
+    '27-11048299-5   KUNZ DIANA SUSANA   Director   76 a├▒os   15/07/2014   Consultado\n' +
+    '27-11048299-5   KUNZ DIANA SUSANA   Director Suplente   76 a├▒os   30/06/2012   Consultado\n' +
+    '27-13089504-8   LARREA DORA MERCEDES   Director Suplente   65 a├▒os   03/12/2021   Consultado\n' +
+    '27-25795785-9   LA PALOMBARA PAOLA FERNANDA   Director   47 a├▒os   03/12/2021   Consultado\n' +
+    '27-25795785-9   LA PALOMBARA PAOLA FERNANDA   Director Suplente   47 a├▒os   26/12/2016   Consultado\n' +
+    '27-25795785-9   LA PALOMBARA PAOLA FERNANDA   Ex Director Suplente   47 a├▒os   18/08/2015   Consultado\n' +
+    '30-71094848-4   RIDGE SA   Accionista   15 a├▒os   30/06/2019   Consultado\n' +
+    '30-71683516-9   NUCLEO NEUTRON SAU   Socio   4 a├▒os   06/03/2020   Consultado\n' +
+    '33-71113071-9   DITOMAX SA   Accionista   15 a├▒os   30/06/2019   Consultado\n' +
+    '30-71027349-5   GIABOO SRL   Empleador   16 a├▒os   01/04/2011   Consultado\n' +
+    '20-20734448-7   GIACOBONE SEBASTIAN OCTAVIO   Firmante cheques   55 a├▒os   24/06/2016   Consultado\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 06.08.2024 16:13 | Doc.20-33480478-0 P├ígina 5 de 11\n' +
+    '2022   2023   2024\n' +
+    '9   10   11   12   1   2   3   4   5   6   7   8   9   10   11   12   1   2   3'... 7836 more characters,
+  indicadoresDetectados: {
+    situacionBcra: '1',
+    cantidadCheques: '945332',
+    montoCheques: '',
+    chequesRechazadosTotal: '',
+    chequesAbonados: '',
+    chequesPendientes: '',
+    montoRechazadoTotal: '',
+    montoAbonado: '',
+    montoPendiente: '',
+    chequesHistoricoParsed: false,
+    consultasUltimos4Meses: null,
+    juiciosConcursos: true,
+    moraVigente: false
+  }
+}
+NOSIS FLOW [2/5] parseNosisIndicatorsFromText {
+  consultasUltimos4Meses: null,
+  cantidadCheques: '945332',
+  montoCheques: ''
+}

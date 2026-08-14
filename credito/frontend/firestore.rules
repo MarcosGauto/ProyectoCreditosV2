@@ -1,0 +1,167 @@
+rules_version = '2';
+
+/**
+ * Firestore Security Rules — Plataforma Créditos (single-tenant / org default).
+ *
+ * Principios:
+ * - Sin autenticación → denegado.
+ * - Escalada de rol solo vía Admin SDK (backend), no desde el cliente.
+ * - Settings / política crediticia: solo admin.
+ * - Datos de empresas / análisis: staff (admin | analista).
+ *
+ * Desplegar: firebase deploy --only firestore:rules
+ */
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function userRole() {
+      return isSignedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        ? userDoc().role
+        : null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && userRole() == "admin";
+    }
+
+    function isStaff() {
+      return isSignedIn() && (userRole() == "admin" || userRole() == "analista");
+    }
+
+    function isSelf(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // —— Usuarios ——
+    match /users/{userId} {
+      allow read: if isSelf(userId) || isAdmin();
+
+      allow create: if isSelf(userId)
+        && request.resource.data.uid == userId
+        && request.resource.data.role == "usuario";
+
+      // El usuario no puede cambiar su propio role (anti-escalada).
+      allow update: if isAdmin()
+        || (isSelf(userId)
+          && request.resource.data.role == resource.data.role
+          && request.resource.data.uid == userId);
+
+      allow delete: if isAdmin();
+    }
+
+    // —— Organización / Settings SC-1 ——
+    match /organization_settings/{organizationId} {
+      allow read: if isStaff();
+      allow write: if isAdmin();
+    }
+
+    // —— Política crediticia legacy ——
+    match /credit_policy/{docId} {
+      allow read: if isStaff();
+      allow write: if isAdmin();
+    }
+
+    // —— Tabla maestra IPC ——
+    match /inflation_index/{period} {
+      allow read: if isStaff();
+      allow write: if isAdmin();
+    }
+
+    // —— Empresas y análisis (CUIT) ——
+    match /empresas/{cuit} {
+      allow read, write: if isStaff();
+
+      match /{subcollection}/{docId} {
+        allow read, write: if isStaff();
+
+        match /{nested}/{nestedId} {
+          allow read, write: if isStaff();
+
+          match /{deep}/{deepId} {
+            allow read, write: if isStaff();
+          }
+        }
+      }
+    }
+
+    // —— Cheques ——
+    match /chequesRechazados/{docId} {
+      allow read, write: if isStaff();
+    }
+
+    // —— Coeficientes / financiación ——
+    match /coeficientesTarjetas/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+    match /coeficientesImportaciones/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+    match /coeficientesHistorial/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+    match /empresasFinanciacion/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // —— Cuenta orden / USD ——
+    match /cuenta_orden/{docId} {
+      allow read, write: if isStaff();
+      match /historial/{histId} {
+        allow read, write: if isStaff();
+      }
+    }
+    match /historialUsd/{docId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // —— Clientes / documentos legacy ——
+    match /clientes/{cuit} {
+      allow read, write: if isStaff();
+      match /{subcollection}/{docId} {
+        allow read, write: if isStaff();
+      }
+    }
+
+    // —— Colecciones legacy planas ——
+    match /balances/{docId} {
+      allow read, write: if isStaff();
+      match /{sub}/{id} {
+        allow read, write: if isStaff();
+      }
+    }
+    match /iva/{docId} {
+      allow read, write: if isStaff();
+    }
+    match /iibb/{docId} {
+      allow read, write: if isStaff();
+    }
+    match /bcra/{docId} {
+      allow read, write: if isStaff();
+    }
+    match /qualification/{docId} {
+      allow read, write: if isStaff();
+    }
+    match /clients/{docId} {
+      allow read, write: if isStaff();
+    }
+
+    // Deny-by-default para cualquier otra ruta
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

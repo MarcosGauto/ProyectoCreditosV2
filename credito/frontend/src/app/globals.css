@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   THEME TOKENS — Light (:root) / Dark (.dark)
+   Dark preserves the current fintech look.
+   Light is a sober credit/finance palette (not pure white).
+========================================================= */
+
+@layer base {
+  :root {
+    /* Light — aplicación financiera sobria */
+    --background: 210 20% 96.5%;
+    --foreground: 222 40% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 40% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 40% 11%;
+
+    --sidebar: 210 18% 94%;
+    --sidebar-foreground: 222 30% 18%;
+
+    --panel: 210 24% 98%;
+    --panel-elevated: 210 16% 94%;
+
+    --primary: 0 68% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 16% 92%;
+    --secondary-foreground: 222 30% 18%;
+
+    --muted: 214 14% 93%;
+    --muted-foreground: 215 16% 38%;
+
+    --accent: 214 32% 94%;
+    --accent-foreground: 215 45% 28%;
+
+    --destructive: 0 68% 46%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 48% 34%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 86% 42%;
+    --warning-foreground: 30 40% 12%;
+    --danger: 0 68% 46%;
+    --danger-foreground: 0 0% 100%;
+
+    --info: 215 70% 38%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 214 16% 86%;
+    --input: 214 18% 90%;
+    --ring: 215 70% 42%;
+    --card-shadow: 0 8px 24px rgb(15 23 42 / 0.06);
+
+    --chart-grid: 214 14% 86%;
+    --chart-axis: 215 14% 40%;
+    --chart-label: 222 25% 28%;
+    --chart-track: 214 14% 90%;
+
+    --radius: 1.25rem;
+
+    color-scheme: light;
+  }
+
+  .dark {
+    /* Dark — conserva el look fintech actual */
+    --background: 240 10% 4%;
+    --foreground: 0 0% 96%;
+
+    --card: 220 39% 11%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 240 10% 10%;
+    --popover-foreground: 0 0% 96%;
+
+    --sidebar: 240 8% 6%;
+    --sidebar-foreground: 0 0% 96%;
+
+    --panel: 222 40% 9%;
+    --panel-elevated: 222 32% 12%;
+
+    --primary: 0 72% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 217 48% 8%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 0 30% 18%;
+    --accent-foreground: 0 72% 60%;
+
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 30 40% 10%;
+    --danger: 0 72% 55%;
+    --danger-foreground: 0 0% 100%;
+
+    --info: 199 80% 62%;
+    --info-foreground: 222 40% 10%;
+
+    --border: 217 25% 18%;
+    --input: 217 48% 8%;
+    --ring: 0 72% 55%;
+    --card-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
+
+    --chart-grid: 240 5% 22%;
+    --chart-axis: 240 5% 55%;
+    --chart-label: 240 5% 70%;
+    --chart-track: 240 5% 18%;
+
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .dark body {
+    background-image: radial-gradient(
+      circle at top left,
+      rgba(220, 38, 38, 0.05),
+      transparent 30%
+    );
+  }
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.35);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* =========================================================
+   REACT DATEPICKER (theme-aware)
+========================================================= */
+
+.react-datepicker {
+  font-family: inherit;
+  background-color: hsl(var(--card));
+  border-radius: 1rem;
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
+  padding: 0.75rem;
+  z-index: 50;
+  color: hsl(var(--foreground));
+}
+
+.react-datepicker__header {
+  background-color: hsl(var(--muted));
+  border-bottom: 1px solid hsl(var(--border));
+  padding-bottom: 0.75rem;
+}
+
+.react-datepicker__current-month {
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.react-datepicker__day-name {
+  color: hsl(var(--muted-foreground));
+}
+
+.react-datepicker__day {
+  color: hsl(var(--foreground));
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+}
+
+.react-datepicker__day:hover {
+  background-color: hsl(var(--accent));
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
+  font-weight: 600;
+}
+
+td {
+  color: hsl(var(--foreground) / 0.9);
+}
+
+th,
+td {
+  border-color: hsl(var(--border));
+}
+
+/* =========================================================
+   CARD EFFECTS
+========================================================= */
+
+.surface-card {
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  border: 1px solid hsl(var(--border));
+  box-shadow: var(--card-shadow);
+}
+
+.fintech-card {
+  background: hsl(var(--card) / 0.96);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(var(--border));
+  box-shadow: var(--card-shadow);
+}
+
+.fintech-card:hover {
+  border-color: hsl(var(--primary) / 0.35);
+  transition: all 0.3s ease;
+}
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+  input,
+  button,
+  .print-hidden,
+  .print\:hidden,
+  .print\:none,
+  .acciones {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-area {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}

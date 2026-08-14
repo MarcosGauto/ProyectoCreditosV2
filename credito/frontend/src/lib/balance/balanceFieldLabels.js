@@ -1,0 +1,21 @@
+/** Etiquetas legibles para checklist de completitud del balance. */
+export const BALANCE_FIELD_LABELS = {
+  activoCorriente: "Activo Corriente",
+  activoNoCorriente: "Activo No Corriente",
+  pasivoCorriente: "Pasivo Corriente",
+  pasivoNoCorriente: "Pasivo No Corriente",
+  totalActivo: "Activo Total",
+  totalPasivo: "Total Pasivo",
+  patrimonioNeto: "Patrimonio Neto",
+  ventas: "Ventas contables",
+  compras: "Compras",
+  costos: "Costos",
+  disponibilidades: "Disponibilidades",
+  creditosVentas: "Créditos por ventas",
+  inventarios: "Inventarios",
+  cuentasSocios: "Cuentas particulares socios",
+  deudasComerciales: "Deudas comerciales",
+  ejercicio: "Año de ejercicio",
+  fechaCierre: "Fecha de cierre",
+  resultados: "Resultados del ejercicio",
+}

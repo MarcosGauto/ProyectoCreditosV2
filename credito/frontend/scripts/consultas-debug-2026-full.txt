@@ -1,0 +1,554 @@
+﻿Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+CONSULTAS PDFJS SECTION CONSULTAS Y SEGUIMIENTOS
+CONSULTAS
+NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 24 de 26
+Cantidad 2 marcas registradas
+
+CONSULTAS INDEXES { consultasIndex: 65737, seguimientoIndex: 65937, parentIdx: 65737 }
+CONSULTAS BLOCK EXTRACT scope {
+  parentIdx: 65737,
+  sectionLength: 6060,
+  sectionPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 24 de 26\n' +
+    'Cantidad 2 marcas registradas\n' +
+    'Seguimientos Permanentes\n' +
+    "Rubros   Jun'26   May'26   Abr'26   Mar'26   Feb'26   Ene'26   Dic'25   Nov'25   Oct'25   Sep'25   Ago'25   Jul'25\n" +
+    'Ent. Financieras   -   1   1   -   -   1   1   1   7   6   4   3\n' +
+    'Comerc., Indust. y Serv.   -   10   9   11   11   10   9   10   12   15   9   8\n' +
+    'Totales   0   11   10   11   11   11   10   11   19   21   13   11\n' +
+    'JOUM   Cant. clases:   2\n' +
+    'Tipo:   Mixta   Clase:   20   Fecha resoluci├│n:   25/06/2025   Titularidad   100%\n' +
+    'Tipo:   Mixta   Clase:   35   Fecha resoluci├│n:   25/06/2025   Titularidad   100%\n' +
+    'DORMICLICK   Cant. clases:   1\n' +
+    'Tipo:   Mixta   Clase:   35 ',
+  hasRubros: true,
+  hasTotales: true,
+  hasEntBancarias: false
+}
+CONSULTAS BLOCK CANDIDATE SKIP {
+  offset: 65737,
+  reason: 'findConsultasTableStartInScopedText returned -1',
+  scopedPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 24 de 26\n' +
+    'Cantidad 2 marcas registradas\n'
+}
+CONSULTAS BLOCK CANDIDATE SKIP {
+  offset: 65937,
+  reason: 'findConsultasTableStartInScopedText returned -1',
+  scopedPreview: 'Seguimientos Permanentes\n' +
+    "Rubros   Jun'26   May'26   Abr'26   Mar'26   Feb'26   Ene'26   Dic'25   Nov'25   Oct'25   Sep'25   Ago'25   Jul'25\n" +
+    'Ent. Financieras   -   1   1   -   -   1   1   1   7   6   4   3\n' +
+    'Comerc., Indust. y Serv.   -   10   9   11   11   10   9   10   12   15   9   8\n' +
+    'Totales   0   11   10   11   11   11   10   11   19   21   13   11\n'
+}
+CONSULTAS BLOCK EXTRACT FAILED {
+  reason: 'no candidates',
+  parentIdx: 65737,
+  segRel: 200,
+  sectionHasTotales: true,
+  sectionHasConsultasWord: true
+}
+CONSULTAS BLOCK FULL null
+CONSULTAS LINES []
+CONSULTAS ROW CANDIDATE null
+CONSULTAS NUMBERS null
+CONSULTAS EXTRAIDAS null
+CONSULTAS EXTRACT FAILED {
+  reason: 'extractConsultasBlockFromText returned null',
+  pdfjsConsultasSectionPreview: 'CONSULTAS Y SEGUIMIENTOS\n' +
+    'CONSULTAS\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 24 de 26\n' +
+    'Cantidad 2 marcas registradas\n'
+}
+CONSULTAS EXTRAIDAS null
+NOSIS CONSULTAS PARSED null
+NOSIS HISTORICO RAW [
+  'Total Actual   333   13   320   843,385,371.59   30,524,384.00   812,860,987.59',
+  '333',
+  '13',
+  '320',
+  '843,385,371.59',
+  '30,524,384.00',
+  '812,860,987.59',
+  index: 0,
+  input: 'Total Actual   333   13   320   843,385,371.59   30,524,384.00   812,860,987.59\n' +
+    'Estad├¡stica por Pagos de Multa\n' +
+    'Pago multa   Cantidad   Desde   Hasta\n' +
+    'No aplicables   -   -   -\n' +
+    'Pendientes   -   -   -\n' +
+    'Pagas   131   23/09/2025   13/01/2026\n' +
+    'Impagas   202   24/10/2025   04/05/2026\n' +
+    'Suspendidos   -   -   -\n' +
+    'Fuente: Disco las├®rico "Base de Cheques Rechazados" del BCRA y sus actualizaciones, donde se informan los cheques rechazados de las personas f├¡sicas y jur├¡dicas y\n' +
+    'sus relacionados.\n' +
+    'Banco   Cant.   Sucursal\n' +
+    'Bco Galicia   2   367   Palmas Del Pilar   LAS MAGNOLIAS 754 - (1629) - PILAR - BUENOS AIRES -',
+  groups: undefined
+]
+NOSIS HISTORICO PARSED {
+  rechazados: 333,
+  abonados: 13,
+  pendientes: 320,
+  montoRechazado: 843385371.59,
+  montoAbonado: 30524384,
+  montoPendiente: 812860987.59
+}
+[NOSIS PARSER REGEX] {
+  label: 'section.juicios',
+  regex: 'juicios?',
+  match: 'juicio de valor sobre las personas citadas ni sobre su solvencia.\n' +
+    'En el caso en ',
+  value: 6403
+}
+[NOSIS PARSER REGEX] {
+  label: 'section.chequesRechazados',
+  regex: 'cheques?\\s*rechazados?',
+  match: 'Cheques Rechazados BCRA\n' +
+    'Cantidad sin fondos, no pagados - ├Ült. 6 Meses:   154\n' +
+    'Mo',
+  value: 59882
+}
+[NOSIS PARSER REGEX] {
+  label: 'section.concursos',
+  regex: 'concursos?',
+  match: 'Concursos, Pedidos de Quiebra\n' +
+    '\n' +
+    'Concursos y quiebras cantidad - ├Ült. 24 meses:   ',
+  value: 5382
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n   1',
+  value: '1'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 6',
+  value: '6'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 2',
+  value: '2'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 3',
+  value: '3'
+}
+[NOSIS PARSER REGEX] {
+  label: 'bcra.situacion',
+  regex: 'situaci[o├│]n\\s*(?:bcra|central\\s*de\\s*deudores)?\\s*[:\\-]?\\s*(\\d)',
+  match: 'Situaci├│n 4',
+  value: '4'
+}
+[NOSIS PARSER REGEX] {
+  label: 'mora.negativa',
+  regex: '\\b(?:sin|no\\s+(?:registra|posee|tiene|existen|se\\s+inform|hay|figura)|0\\s+cheques?|cero\\s+cheques?|no\\s+registra)\\b',
+  match: 'Solicitado por:   363065 - GRUPO NUCLEO S.A.   Fecha: 03/06/2026 17:13\n' +
+    'Informaci├│n confidencial. Se proh├¡be su exhibici├│',
+  value: false
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicio',
+  value: 'juicio'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicios',
+  value: 'juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicio',
+  value: 'juicio'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'Juicios',
+  value: 'Juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.keyword',
+  regex: '\\bjuicios?\\b',
+  match: 'juicios',
+  value: 'juicios'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concurso',
+  value: 'Concurso'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'concurso',
+  value: 'concurso'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concursos',
+  value: 'Concursos'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'Concurso',
+  value: 'Concurso'
+}
+[NOSIS PARSER REGEX] {
+  label: 'concursos.keyword',
+  regex: '\\bconcursos?\\b',
+  match: 'concurso',
+  value: 'concurso'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.expediente',
+  regex: '\\bexpediente\\b',
+  match: 'expediente',
+  value: 'expediente'
+}
+[NOSIS PARSER REGEX] {
+  label: 'juicios.impaga',
+  regex: '\\bimpaga?\\b',
+  match: 'Impaga',
+  value: true
+}
+[NOSIS PARSER REGEX] {
+  label: 'impagos.cantidad',
+  regex: '(?:cheques?\\s*)?(?:impagos?|multas?\\s*impagas?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'Impago\n11',
+  value: '11'
+}
+[NOSIS PARSER REGEX] {
+  label: 'impagos.cantidad',
+  regex: '(?:cheques?\\s*)?(?:impagos?|multas?\\s*impagas?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'Impago\n12',
+  value: '12'
+}
+[NOSIS PARSER REGEX] {
+  label: 'impagos.cantidad',
+  regex: '(?:cheques?\\s*)?(?:impagos?|multas?\\s*impagas?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'Impago\n01',
+  value: '01'
+}
+[NOSIS PARSER REGEX] {
+  label: 'impagos.cantidad',
+  regex: '(?:cheques?\\s*)?(?:impagos?|multas?\\s*impagas?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'Impago\n03',
+  value: '03'
+}
+[NOSIS PARSER REGEX] {
+  label: 'impagos.cantidad',
+  regex: '(?:cheques?\\s*)?(?:impagos?|multas?\\s*impagas?)\\s*[:\\-]?\\s*(\\d[\\d.]*)',
+  match: 'Impago\n04',
+  value: '04'
+}
+NOSIS INDICATORS BUILT {
+  chequesHistoricoParsed: true,
+  cantidadCheques: '320',
+  montoCheques: '812860987,59',
+  chequesRechazadosTotal: '333',
+  chequesAbonados: '13',
+  chequesPendientes: '320',
+  montoRechazadoTotal: '843385371,59',
+  montoAbonado: '30524384,00',
+  montoPendiente: '812860987,59'
+}
+NOSIS PARSER DEBUG {
+  textoExtraido: 'Solicitado por:   363065 - GRUPO NUCLEO S.A.   Fecha: 03/06/2026 17:13\n' +
+    'Informaci├│n confidencial. Se proh├¡be su exhibici├│n o divulgaci├│n.\n' +
+    'No implica juicio de valor sobre las personas citadas ni sobre su solvencia.\n' +
+    'En el caso en que haya registros sin el N┬║ de documento o CUIT/CUIL identificatorios, la informaci├│n debe tomarse como una simple   referencia y el usuario deber├í asegurarse que el\n' +
+    'registro encontrado corresponda a la persona buscada y no a un hom├│nimo.   Las interpretaciones y selecci├│n de registros para su impresi├│n que se hagan, son de exclusiva\n' +
+    'responsabilidad de quien las realizare.   Las l├¡neas horizontales separan registros independientes entre s├¡ vinculados a alguna de las condiciones de b├║squeda utilizadas.\n' +
+    'Informe Individual   >   30-71592848-1   |   DORMICLICK SAS\n' +
+    'Domicilio fiscal\n' +
+    'Domicilios alternativos\n' +
+    'Facturaci├│n estimada anual:   Entre $ 632,569,476 y $ 3,162,847,222\n' +
+    'Cantidad de empleados:   Entre 1 y 5\n' +
+    'Score:   1\n' +
+    'Rating:   nc\n' +
+    'Score conjunto:   nc\n' +
+    'Total de endeudamiento sistema financiero:   $ 1,211,980,000\n' +
+    'Total de compromisos mensuales sistema financiero:   $ 40,090,930\n' +
+    'Situaci├│n vigente de Central de Deudores BCRA:   4   Con alto riesgo de insolvencia / Riesgo alto\n' +
+    'Total de consultas en Nosis:   ├Ültimos 3 meses: 20   |   ├Ültimos 12 meses: 130\n' +
+    'Registra aportes patronales   impagos   como empleador dentro de los ├║ltimos 12 meses\n' +
+    '├Ültimo contrato SRT con afiliaci├│n   vigente   , aseguradora   EXPERTA ART\n' +
+    'PERFIL DEL CONSULTADO\n' +
+    'INFORMACI├ôN GENERAL\n' +
+    'SCORE\n' +
+    '1  \n' +
+    '1   999\n' +
+    '1\n' +
+    'CDA: 917.052 - Creditos y Cobranzas (Falta Doc.)\n' +
+    'Observado\n' +
+    'Identificaci├│n:   CUIT 30-71592848-1   Raz├│n Social:   DORMICLICK SAS\n' +
+    'Tipo de sociedad:   Empresa   Contrato social:   14/02/2018   Edad:   8 a├▒os\n' +
+    'Rivera Pedro I Dr 5010 Piso 6 - Dto D (1431) - Capital Federal\n' +
+    'Tel.: (230) 437-3326\n' +
+    'Albari├▒o 415 - Mza L C C - (1408) - Capital Federal\n' +
+    'Rivera Pedro I Dr 5010 Piso 6 - Dto D - Mza L C C - (1431) - Capital Federal\n' +
+    'Albarino 415 - Mza L C C - (1408) - Capital Federal\n' +
+    'RESUMEN NOSIS\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 1 de 26\n' +
+    'Actividades\n' +
+    'Sector:   Comercio\n' +
+    'Categor├¡a:   Comercio al por mayor y al por menor; reparaci├│n de veh├¡culos automotores y motocicletas\n' +
+    'Principal:   475420 - Venta al por menor de colchones y somieres\n' +
+    'F. Inicio: 01/01/2019\n' +
+    'Clanae Nivel 3:   47.5 - Venta al por menor de art├¡culos de uso dom├®stico n.c.p. en comercios especializados\n' +
+    'Clanae Nivel 5:   47.542 - Venta al por menor de colchones y somieres\n' +
+    'Secundaria:\n' +
+    '461099 - Venta al por mayor en comisi├│n o consignaci├│n de mercader├¡as n.c.p.\n' +
+    'F. Inicio: 01/03/2020\n' +
+    '620900 - Servicios de inform├ítica n.c.p.\n' +
+    'F. Inicio: 01/03/2026\n' +
+    'Grupo de variables configurado por el usuario:\n' +
+    'Nombre del grupo:   NM. Personas Jur├¡dicas\n' +
+    'N├║mero: 99002 Versi├│n: 7 Fecha:   02/11/2018\n' +
+    '[VI] Domicilio Fiscal\n' +
+    'Calle:   RIVERA PEDRO I DR\n' +
+    'N├║mero:   5010\n' +
+    'Piso:   6\n' +
+    'Departamento:   D\n' +
+    'Localidad:   CAPITAL FEDERAL\n' +
+    'C├│digo Postal:   1431\n' +
+    'Provincia:   Capital Federal\n' +
+    '[VI] Tel├®fonos\n' +
+    'C├│digo de ├ürea, del Tel├®fono N┬║1:   230\n' +
+    'N├║mero, del Tel├®fono N┬║1:   437-3326\n' +
+    '[HC] Cheques Rechazados BCRA\n' +
+    'Cantidad sin fondos, no pagados - ├Ült. 6 Meses:   154\n' +
+    'Monto sin fondos, no pagados - ├Ült. 6 Meses:   $ 388,137,228\n' +
+    '[QU] Juicios, Quiebras, Concursos, Pedidos de Quiebra\n' +
+    'Concursos y quiebras cantidad - ├Ült. 24 meses:   -\n' +
+    '[RC] Referencias Comerciales\n' +
+    'Cantidad - Vigente:   3\n' +
+    'Fuente - Vigente:   GARANTIZAR S.G.R./ARGENPYMES SGR/MERCADO LIBRE SRL\n' +
+    '[CO] Consultados\n' +
+    'Consultas - ├Ült. 12 Meses:   144\n' +
+    '[MC] Marcas Registradas\n' +
+    'Cantidad:   2\n' +
+    '[RP] Repsal\n' +
+    'Fecha alta:\n' +
+    'Estado:\n' +
+    'RESUMEN CONFIGURABLE\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 2 de 26\n' +
+    '[PE] Proveedores del Estado\n' +
+    'Es proveedor del estado:   No\n' +
+    '[DF] Deudores Fiscales\n' +
+    'Tiene Deudas Fiscales:   No\n' +
+    '[FEX] Fuentes Externas\n' +
+    '(CNE) Cumplimiento Censal - Fecha ├Ült. Actualizaci├│n:   08.11.2021\n' +
+    '(CNE) Cumplimiento Censal - Fecha Pr├│xima Actualizaci├│n:\n' +
+    '[CNE] Detalle Cumplimiento censal - INDEC\n' +
+    '(CNE) Cumplimiento Censal - Indica si el cuit tiene certificado.:   Si\n' +
+    'Inscripciones en ARCA\n' +
+    'Descripci├│n   Fecha alta\n' +
+    'Iva   01/02/2018\n' +
+    'Bp - Acciones o Participaciones   01/02/2018\n' +
+    'Regimenes de Informaci├│n 68   01/02/2018\n' +
+    'Regimenes de Informaci├│n 255   01/02/2018\n' +
+    'Ganancias Sociedades   01/03/2018\n' +
+    'Empleador - Aportes Seg. Social   01/01/2025\n' +
+    'CONTRIBUYENTE NO AMPARADO EN LOS BENEFICIOS PROMOCIONALES INDUSTRIALES ESTABLECIDOS POR LEY 22021 Y SUS MODIFICATORIAS 22702 Y 22973, A LA\n' +
+    'FECHA DE EMISION DE LA PRESENTE CONSTANCIA.\n' +
+    'Fuentes:\n' +
+    'ARCA\n' +
+    'ANSES |   www.anses.gob.ar\n' +
+    'SRT |   www.srt.gob.ar\n' +
+    'Per├¡odo   Aportes de seguro social   Aportes de obra social   Contrib. patronal obra social\n' +
+    '05/2025   Pago   Pago   Pago\n' +
+    '06/2025   Pago   Pago   Pago\n' +
+    '07/2025   Pago   Pago   Pago\n' +
+    '08/2025   Pago   Pago   Pago\n' +
+    '09/2025   Pago   Pago   Pago\n' +
+    '10/2025   Impago   Impago   Impago\n' +
+    '11/2025   Impago   Impago   Impago\n' +
+    '12/2025   Impago   Impago   Impago\n' +
+    '01/2026   Impago   Impago   Impago\n' +
+    'ARCA\n' +
+    'Contrato social:   14/02/2018 [8 a├▒os]   Inscripci├│n ARCA:   22/02/2018 [8 a├▒os]\n' +
+    'Ganancias:   Activo   IVA:   Activo\n' +
+    'APORTES PATRONALES\n' +
+    'Como   EMPLEADOR   al 12/05/2026\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 3 de 26\n' +
+    'Per├¡odo   Aportes de seguro social   Aportes de obra social   Contrib. patronal obra social\n' +
+    '02/2026   Impago   Impago   Impago\n' +
+    '03/2026   Impago   Impago   Impago\n' +
+    '04/2026   Impago   Impago   Impago\n' +
+    'Fuente: ARCA\n' +
+    'Listado de empleados verificados\n' +
+    'Documento   Nombre   Nacimiento   Edad   Actualizado al\n' +
+    '27-23945639-7   CORREA CLAUDIA FERNANDA   10/06/1974   51   12/05/2026\n' +
+    '20-26894411-8   RAMOS ANDRES   25/08/1978   47   13/04/2026\n' +
+    'CUIT   Denominaci├│n\n' +
+    '20-26894411-8   RAMOS ANDRES\n' +
+    '20-08462603-2   RAMOS FERNANDO LUIS\n' +
+    '27-33156146-6   RAMOS ROCIO\n' +
+    'N├ôMINA DE EMPLEADOS\n' +
+    'RELACIONES\n' +
+    'Total de relaciones encontradas:   7   Total de relaciones encontradas en bases Nosis:   7\n' +
+    '├üRBOL\n' +
+    'Documento y Raz├│n social   V├¡nculo   Edad   Fecha   Consultado\n' +
+    '30-71592848-1   DORMICLICK SAS   Principal   8 a├▒os\n' +
+    '20-26894411-8   RAMOS ANDRES   Firmante cheques   47 a├▒os   28/02/2019\n' +
+    '30-50054804-1   GRUPO PE├æAFLOR SA   Empleador   84 a├▒os   01/08/2012\n' +
+    '30-50402337-7   INDUSTRIAS ATLANTIS SA   Empleador   64 a├▒os   01/10/2024\n' +
+    '30-67964590-7   MC CAIN ARGENTINA SA   Empleador   31 a├▒os   01/08/2016\n' +
+    '30-70751366-3   TRADE FOAM SA   Empleador   25 a├▒os   01/07/2021\n' +
+    '30-71592848-1   DORMICLICK SAS   Empleador   8 a├▒os   01/09/2025\n' +
+    '30-71623749-0   TIENDA LAMARCA SAS   Firmante cheques   7 a├▒os   24/01/2020\n' +
+    '(*) Personas: Edad menor a 25 o mayor a 64 a├▒os | Empresas: Edad menor a 2 a├▒os\n' +
+    'FIRMANTES DE CHEQUES\n' +
+    'BALANCES\n' +
+    '├ÜLTIMOS BALANCES REDUCIDOS\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 4 de 26\n' +
+    '2024   2025   2026\n' +
+    '7   8   9   10   11   12   1   2   3   4   5   6   7   8   9   10   11   12   1   2   3   4   5   6\n' +
+    'Score   200   254   156   156   156   156   156   492   492   492   492   492   492   590   621   1   1   1   1   1   1   1   1   1\n' +
+    'Cantidad de bancos   2   2   2   2   2   2   2   3   4   5   4   4   4   7   8   8   10   11   12   11   12   10   -\n' +
+    'Situaci├│n   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   2   2   3   3   3   4   4\n' +
+    'Cantidad de tarjetas   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -\n' +
+    'Cheques rechazados BCRA\n' +
+    'Cuentas Personas Jur├¡d ÔÇª\n' +
+    'Rechazados   -   -   -   -   -   -   -   -   -   -   -   -   -   -   3   30   130   106   57   4   2   -   1   -\n' +
+    'Recuperados   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   6   6   1   -   -   -   -   -   -\n' +
+    'No recuperados   -   -   -   -   -   -   -   -   -   -   -   -   -   -   3   24   124   105   57   4   2   -   1   -\n' +
+    'No pago multa   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   27   58   55   55   4   2   -   1   -\n' +
+    'Historia de cheques informados por Clientes de Nosis y por el BCRA\n' +
+    'Positivos   -   2   -   1   -   1   -   -   -   2   2   -   -   2   5   -   -   -   -   -   -   -   -   -\n' +
+    'Aportes Patronales\n' +
+    'Empleador   P   P   P   P   P   P   P   P   P   I   I   I   I   I   I   I\n' +
+    'Referencias Comerciales   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   1   1   3   3   3   3\n' +
+    'Consultas recibidas   5   9   15   8   7   5   3   13   12   6   20   14   13   17   17   19   9   4   12   8   11   14   6   -\n' +
+    '917.052 - Creditos y Cobranzas (Falta Doc.)\n' +
+    'INFORMACI├ôN SIN VALIDEZ - EN PROCESO DE PRUEBA\n' +
+    'Score:   1\n' +
+    'EVOLUCI├ôN ANTECEDENTES\n' +
+    'EVOLUCI├ôN DE ANTECEDENTES COMERCIALES   - Hist├│rico a 24 meses\n' +
+    'SCORE   - Hist├│rico a 24 meses\n' +
+    'Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun   Jul   Ago   Sep   Oct   Nov   Dic   Ene   Feb   Mar   Abr   May   Jun\n' +
+    '1\n' +
+    '100\n' +
+    '200\n' +
+    '300\n' +
+    '400\n' +
+    '500\n' +
+    '600\n' +
+    '700\n' +
+    '800\n' +
+    '900\n' +
+    '999 2024 2025 2026\n' +
+    'CRITERIOS DE ACEPTACI├ôN\n' +
+    'NOSIS.Manager | Informaci├│n confidencial. Prohibida su divulgaci├│n | Cli.363065 | 03.06.2026 17:13 | Doc.30-71592848-1 P├ígina 5 de 26\n' +
+    'Facturaci├│n Estimada:   3\n' +
+    'Compromisos Mensuales:   $ 40,090,930\n' +
+    'Criterio de Aceptaci├│n configurado por el usuario: 363065 - GRUPO NUCLEO S.A.\n' +
+    'Nombre CDA:   Creditos y Cobranzas\n' +
+    'Versi├│n 917.52.012 configurado por el usuario el 21/05/2013\n' +
+    'Resultado seg├║n configuraci├│n:   Observado\n' +
+    'Identidad V├ílida:   Cumple\n' +
+    'Fecha Contrato Social   Cumple\n' +
+    'Actividad:   No Considerado\n' +
+    'Bureau de Cr├®dito del BCRA:   Rechazado\n' +
+    'Oficios Judiciales:   Cumple\n' +
+    'Cheques Rechazados del BCRA:   Rechazado\n' +
+    'Deudores Ent. Liquidadas:   Cumple\n' +
+    'Concurso o Quiebra:   Cumple\n' +
+    'Pedido Quiebra:   Cumple\n' +
+    'Juicios - Demandado:   Cumple\n' +
+    'Comunicaciones del BCRA y de Fuentes Directas:   Cumple\n' +
+    'Referencias Comerciales:   No Considerado\n' +
+    'Aportes Patronales:   No Considerado\n' +
+    'Facturas Ap├│crifas:   No Considerado\n' +
+    'Laudos Incumplidos:   No Considerado\n' +
+    'Antecedentes Fiscales:   No Considerado\n' +
+    'Documentos Cuestionados:   No Considerado\n' +
+    'Deudores Previsionales:   No Considerado\n' +
+    'Score:   Rechazado\n' +
+    'Facturaci├│'... 61797 more characters,
+  indicadoresDetectados: {
+    situacionBcra: '1',
+    cantidadCheques: '320',
+    montoCheques: '812860987,59',
+    chequesRechazadosTotal: '333',
+    chequesAbonados: '13',
+    chequesPendientes: '320',
+    montoRechazadoTotal: '843385371,59',
+    montoAbonado: '30524384,00',
+    montoPendiente: '812860987,59',
+    chequesHistoricoParsed: true,
+    consultasUltimos4Meses: null,
+    juiciosConcursos: true,
+    moraVigente: false
+  }
+}
+NOSIS FLOW [2/5] parseNosisIndicatorsFromText {
+  consultasUltimos4Meses: null,
+  cantidadCheques: '320',
+  montoCheques: '812860987,59'
+}
